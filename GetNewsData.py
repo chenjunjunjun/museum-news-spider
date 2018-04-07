@@ -136,4 +136,4 @@ def LoadData(path):
 
 def GetNewsDataRun(cfg):
     data_path = 'news_links.txt'
-    GetData(data_path, openflag=cfg.get('timelimit', 'flag'), limit=cfg.get('timelimit', 'limit'), cfg=cfg)
+    GetData(data_path, openflag=cfg.get('timelimit', 'flag'), limit=float(cfg.get('timelimit', 'limit')), cfg=cfg)

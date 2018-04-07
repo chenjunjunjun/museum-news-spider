@@ -1,0 +1,25 @@
+1523082568674	geckodriver	INFO	geckodriver 0.20.0
+1523082568717	geckodriver	INFO	Listening on 127.0.0.1:51765
+1523082569674	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1YZDKcl22CpZ"
+1523082578852	Marionette	INFO	Enabled via --marionette
+1523082597666	Marionette	INFO	Listening on port 37221
+1523082598056	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x46000B,name=PHttpBackgroundChannel::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x46000B,name=PHttpBackgroundChannel::Msg___delete__) Channel error: cannot send/recv
+
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1523082617104	geckodriver::marionette	ERROR	Failed to stop browser process
+1523082629781	geckodriver	INFO	geckodriver 0.20.0
+1523082629820	geckodriver	INFO	Listening on 127.0.0.1:42365
+1523082630923	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jSIH2qQZC5MY"
+1523082635844	Marionette	INFO	Enabled via --marionette
+1523082645372	Marionette	INFO	Listening on port 35555
+1523082645460	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1523082659635	geckodriver::marionette	ERROR	Failed to stop browser process
+1523082664061	geckodriver	INFO	geckodriver 0.20.0
+1523082664073	geckodriver	INFO	Listening on 127.0.0.1:49227
+1523082665093	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.3ZAOlbybTgIf"

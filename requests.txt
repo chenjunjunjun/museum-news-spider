@@ -1,0 +1,8 @@
+beautifulsoup4==4.4.1
+bosonnlp==0.11.0
+lxml==3.5.0
+PyMySQL==0.7.11
+requests==2.18.4
+Scrapy==1.5.0
+selenium==3.11.0
+urllib3==1.22

@@ -18,6 +18,7 @@ _ _ _
  * configparser==3.5.0
 
 其中以上依赖可在项目目录下执行`pip install -r requirements.txt`安装，py2与py3并存时，请用`pip3 install -r requirements.txt`
+
 同时需要下载firefox_webdriver，请在[https://github.com/mozilla/geckodriver/releases](https://github.com/mozilla/geckodriver/releases)下载相应版本
 
 _ _ _
@@ -27,6 +28,7 @@ _ _ _
 1. `MainProgram.py`为主运行程序
 2. 本系统在爬去新闻链接部分（即`URLSpider`和`URLSpider2`）采用的数据存储方式为，存储到本地的txt文本格式。
 3. 在抓取新闻文本及其详细信息部分（即`GetNewData`），采取的是将数据存入到数据库的方式，数据库的连接方式可在`config.ini`中配置。（声明：在系统中我并没有对数据库部分代码进行重构，所以略显繁重，不过不影响使用。）**另外，在使用这一部分的时候，需要自己事先在本地数据库建表**（偷懒了-_-）,表结构如下
+
 | 列名 | 类型 | 说明|
 |--------|--------|--------|
 |   id   |  int   |id自增|

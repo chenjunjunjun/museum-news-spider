@@ -23,3 +23,29 @@
 1523082664061	geckodriver	INFO	geckodriver 0.20.0
 1523082664073	geckodriver	INFO	Listening on 127.0.0.1:49227
 1523082665093	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.3ZAOlbybTgIf"
+1523176915394	geckodriver	INFO	geckodriver 0.20.0
+1523176915437	geckodriver	INFO	Listening on 127.0.0.1:33583
+1523176915555	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.m8cl1z3W49L4"
+1523176926094	Marionette	INFO	Enabled via --marionette
+1523176941430	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js :: shutdown :: line 200"  data: no] Stack trace: shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:200 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4419 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2279
+1523176943678	Marionette	INFO	Listening on port 41089
+1523176945016	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12184, Chrome_ChildThread] WARNING: pipe error (3): 连接被对方重设: file /build/firefox-_6vbC4/firefox-59.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1523177056374	geckodriver	INFO	geckodriver 0.20.0
+1523177056384	geckodriver	INFO	Listening on 127.0.0.1:58075
+1523177056482	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YC3ezrgJCuaO"
+1523177059032	Marionette	INFO	Enabled via --marionette
+1523177065734	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:274 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///usr/lib/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4419 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2279
+1523177066256	Marionette	INFO	Listening on port 37787
+1523177066536	Marionette	WARN	TLS certificate errors will be ignored for this session
+1523177185813	geckodriver	INFO	geckodriver 0.20.0
+1523177185824	geckodriver	INFO	Listening on 127.0.0.1:55203
+1523177186823	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YE5j95mrxFNe"
+1523177187972	Marionette	INFO	Enabled via --marionette
+1523177273961	geckodriver	INFO	geckodriver 0.20.0
+1523177273975	geckodriver	INFO	Listening on 127.0.0.1:40451
+1523177274982	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BH9a1yzGhHPo"
+1523177301977	geckodriver	INFO	geckodriver 0.20.0
+1523177301984	geckodriver	INFO	Listening on 127.0.0.1:49355
+1523177303003	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WO6nNeHIod0s"

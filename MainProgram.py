@@ -11,44 +11,56 @@ import GetNewsData
 import URLspider
 import URLspider2
 import positive
+import dataselect
 from configparser import ConfigParser
 
 if __name__ == '__main__':
     config = ConfigParser()
     config.read('config.ini')
-    try:
-        print('-------FirstURL Spider Start--------')
-        URLspider2.URLSecondSpiderRun(config)
-        print('-------FirstURL Spider End--------')
-    except KeyError:
-        pass
+    if config.getboolean('spider', 'spider1'):
+        try:
+            print('-------FirstURL Spider Start--------')
+            URLspider2.URLSecondSpiderRun(config)
+            print('-------FirstURL Spider End--------')
+        except:
+            pass
+    if config.getboolean('spider', 'spider2'):
+        try:
+            print('-------SecondURL Spider Start--------')
+            URLspider.URLSpiderRun(config)
+            print('-------SecondURL Spider End--------')
+        except:
+            pass
+    if config.getboolean('spider', 'newsspider'):
+        try:
+            print('-------News Spider Start--------')
+            GetNewsData.GetNewsDataRun(config)
+            print('-------News Spider End--------')
+        except:
+            pass
 
-    try:
-        print('-------SecondURL Spider Start--------')
-        URLspider.URLSpiderRun(config)
-        print('-------SecondURL Spider End--------')
-    except KeyError:
-        pass
-
-    try:
-        print('-------News Spider Start--------')
-        GetNewsData.GetNewsDataRun(config)
-        print('-------News Spider End--------')
-    except KeyError:
-        pass
-
-    if config.get('Positive', 'flag'):
+    if config.getboolean('Positive', 'flag'):
         try:
             print('-------News Positive Analysis Start--------')
             positive.AnalyzePositive(config)
             print('-------News Positive Analysis End--------')
-        except KeyError:
+        except:
             pass
 
-    if config.get('Confirm', 'flag'):
+    if config.getboolean('Confirm', 'flag'):
         try:
             print('-------News Weight Analysis Start--------')
             ConfirmMuseum.AnalyzeWeight(config)
             print('-------News Weight Analysis End--------')
-        except KeyError:
+        except:
             pass
+
+    if config.getboolean('cmade', 'flag'):
+        try:
+            print('-------Custom Made Start--------')
+            dataselect.GetInfor(config)
+            print('-------Custom Made End--------')
+        except:
+            pass
+
+    print("Program Ending!")
